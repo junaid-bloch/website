@@ -7,6 +7,7 @@
     <style>
             *{
     scroll-behavior:smooth;
+    font-size: large;
     }
         body {
             font-family: Arial, sans-serif;
@@ -30,7 +31,7 @@
             display: flex;
             justify-content: space-around;
             background-color: #555;
-            left-padding: 1em;
+            padding: 0.5em;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -39,8 +40,7 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            left-padding: 10px;
-            padding: 1em 1em;
+            padding: 0.5em 1em;
             margin: 0 1em;
             transition: color 0.3s ease-in-out;
         }
@@ -50,13 +50,14 @@
         }
 
         section {
-            margin: 2em;
-            padding: 2em 0.5em 0.5em 0.5em;
+            padding: 2em;
             transition: background-color 0.3s ease-in-out;
         }
 
         h2 {
             color: #333;
+            font-size: larger;
+            font-weight: bold;
         }
 
         p {
@@ -64,8 +65,8 @@
         }
 
         img {
-            max-width: 100%;
-            height: auto;
+            width: 400px;
+            height: 300px;
         }
 
         footer {
@@ -84,45 +85,135 @@
     </header>
 
     <nav>
-        <a href="#info">Information</a>
+        <a href="#info">Seaweed </a>
         <a href="#cultivation">Cultivation Techniques</a>
         <a href="#benefits">Benefits</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="info">
-        <h2>Seaweed Farming Information</h2>
-        <p>Provide introductory information about seaweed farming here.</p>
+        <h2>Seaweed Types</h2>
+        <p>Sargassum and Kappaphycus are two different types of seaweed with distinct characteristics and uses.
+<ol>
+            <li> <h3>Sargassum:</h3></li>
+        <ul>
+            <img src="data:image/jpeg;base64,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" alt="Sargassum image">
+            <img src="https://akumaldiveshop.com/newsite/wp-content/uploads/2016/08/2-1024x683.jpg" alt="sargassum image 2">
+            <li><h4> Habitat: </h4><br> Sargassum is a genus of brown macroalgae (seaweed) that is primarily pelagic, meaning it floats in the open ocean. The Sargasso Sea in the Atlantic Ocean is well-known for the abundance of Sargassum seaweed. <br><br></li>
+            <li><h4>  Characteristics: </h4><br>Sargassum has distinctive air bladders that help it float. It forms large floating mats and provides a unique habitat for various marine organisms. <br><br></li>
+            <li> <h4> Ecological Importance:</h4><br>Sargassum plays a crucial role in the marine ecosystem by providing shelter and food for a variety of marine species, including fish, crabs, and sea turtles. <br> <br></li>
+            
+            </ul>
+            <li><h3>Kappaphycus:</h3></li>
+            <ul>
+                <img src="https://www.cabidigitallibrary.org/cms/10.1079/cabicompendium.100509/asset/923ceb7c-ff70-4b16-bd41-ae9993ce1e09/assets/graphic/devele02.jpeg" alt="kappaphycus image">
+                <img src="https://www.dial4trade.com/uploaded_files/product_images/image-360820.jpg" alt="kappaphycus image 2">
+                <li><h4> Habitat: </h4><br>Kappaphycus is a genus of red seaweed that is often farmed in tropical coastal waters. <br><br></li>
+               <li><h4>Characteristics: </h4><br>This seaweed is known for its fast growth rate and adaptability to different environmental conditions. It is commonly cultivated for commercial purposes. <br><br></li>
+               <li><h4>Uses: </h4><br>Kappaphycus is a source of carrageenan, a polysaccharide with various industrial applications. Carrageenan is used in the food industry as a thickening and gelling agent in products such as dairy, meat, and dessert items. It is also used in pharmaceuticals and cosmetics. <br><br></li>
+               <li><h4>Aquaculture: </h4><br>Kappaphycus farming is a form of aquaculture, and it is often practiced in countries with suitable coastal conditions. It is a valuable source of income for coastal communities. <br><br></li>
+            
+            </ul>
+        </ol>
+            Both Sargassum and Kappaphycus have ecological and economic significance, although in different ways. While Sargassum is essential for the marine ecosystem, Kappaphycus is cultivated for its industrial applications in various products. </p>
     </section>
 
     <section id="cultivation">
         <h2>Cultivation Techniques</h2>
-        <p>Describe the methods and procedures for cultivating seaweed. Include images related to seaweed farming.</p>
-        <img src="https://bl-i.thgim.com/public/economy/agri-business/6qsh2g/article33659389.ece/alternates/FREE_1200/SEAWEEDINDUSTRY" alt="Seaweed Cultivation">
+        <ul><li>Seaweed plantation and collection requires licence and permission of higher authorities.</li>
+            <li>Sargassum seaweed is readily collected from the sea waters when in the early winter time period. </li>
+            <li>Kappaphycus seaweed has the cultivation technique similar to the one shown in picture. </li>
+            <li>These cultivation techniques are done in shallow waters and low streams where there is almost no damage to the aquatic life of the stream. </li>
+        </ul>
+            <img src="https://bl-i.thgim.com/public/economy/agri-business/6qsh2g/article33659389.ece/alternates/FREE_1200/SEAWEEDINDUSTRY" alt="Seaweed Cultivation">
     </section>
 
     <section id="benefits">
         <h2>Benefits of Seaweed Cultivation</h2>
-        <p>Explain the various benefits of seaweed cultivation, such as environmental, economic, and health benefits.</p>
+        <ol>
+            <li><h3>Sargassum Seaweed</h3></li>
+            <ul>
+              <li>  <h4>Biodiversity Support:</h4><br>
+                
+                Sargassum provides important habitat and serves as a floating ecosystem in the open ocean, supporting a diverse range of marine life. <br><br></li>
+                <li><h4>Carbon Sequestration:</h4><br>
+                
+                Seaweeds like Sargassum can absorb and store carbon dioxide, contributing to carbon sequestration and potentially helping mitigate the effects of climate change. <br><br></li>
+               <li> <h4>Bioremediation:</h4><br>
+                
+                Sargassum has been explored for its ability to absorb and remove pollutants from the water, acting as a natural means of bioremediation. <br><br></li>
+            </ul>
+            <li><h3>Kappaphycus Seaweed</h3></li>
+            <ul>
+                <li>
+                    <h4>Carrageenan Production:</h4><br>
+
+Kappaphycus species are a source of carrageenan, a hydrocolloid widely used in the food and pharmaceutical industries for its gelling, thickening, and stabilizing properties.
+                <br><br></li>
+                <li>
+                    <h4>Economic Benefits:</h4><br>
+
+Cultivation of Kappaphycus seaweeds can provide economic benefits to coastal communities through the production and sale of carrageenan.
+                <br><br></li>
+                <li>
+                    <h4>Aquaculture and Livestock Feed:</h4><br>
+
+Some varieties of Kappaphycus seaweed can be used as feed in aquaculture and livestock industries, providing a sustainable and nutritious food source.
+                <br> <br></li>
+                <li>
+                    <h4>Soil Amendment:</h4><br>
+
+Seaweed extracts derived from Kappaphycus can be used as soil amendments, contributing to soil fertility and plant growth.
+                <br><br></li>
+            </ul>
+            <li><h3>Common Benefits</h3></li>
+            <ul>
+                <li>
+                  <h4> Nutrient Absorption:</h4><br>
+
+Both Sargassum and Kappaphycus can absorb nutrients from the surrounding water, which may help reduce nutrient loading in areas affected by eutrophication. 
+                <br><br></li>
+                <li>
+                    <h4>Alternative Energy Source:</h4><br>
+
+Seaweeds, including Sargassum and Kappaphycus, are being explored as a potential source of bioenergy through processes like anaerobic digestion or biofuel production.
+                <br><br></li>
+                <li>
+                    <h4>Biodegradable Materials:</h4><br>
+
+Seaweeds can be used to produce biodegradable materials, such as packaging, reducing the environmental impact of certain products.
+                <br><br></li>
+                <li>
+                    <h4>Water Quality Improvement:</h4><br>
+
+The cultivation of seaweeds can contribute to improving water quality by absorbing excess nutrients and promoting overall ecosystem health.
+                <br><br></li>
+            </ul>
+        </ol>
+        <p>While these potential benefits are promising, it's crucial to approach the cultivation and utilization of seaweeds sustainably to avoid negative environmental impacts. Additionally, ongoing research is necessary to fully understand and optimize the various applications of Sargassum and Kappaphycus seaweeds.</p>
     </section>
 
     <section id="contact">
-        <h2>Contact Information</h2>
-        <button id="contactButton">Contact by email</button>
-        <p>Provide contact information for the author or anyone interested in learning more about seaweed farming.</p>
+        <h2>Contact the dealer</h2>
+        <button id="contactButton">Email Now</button>
+        <a href="tel:+91 9227606786">
+            <button type="button">Dial Now</button>
+        </a>
+        <p>If the above buttons do not work tap the telegram or whatsapp icon to chat directly.</p>
+        <a href="https://web.telegram.org/k/#@altafbloch"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="telegram link" style="height: 50px; width: 50px; border-radius: 50%; "></a>
+        <a href="https://wa.me/c/919275056220"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuIpdwxhrVfshc_1A-X4rgqzZa-8O2OZQlw_qKYAE&s" alt="whatsapp chat link" style="height: 50px; width: 50px; border-radius: 50%; "></a>
     </section>
     
 
     <script>
         // JavaScript to handle the button click event and redirect to the email
         document.getElementById('contactButton').addEventListener('click', function() {
-            // Replace 'author@example.com' with the actual email address of the author
-            window.location.href = 'mailto:erlikgamingyt@gmail.com';
+            window.location.href = 'mailto:altafrazvi75@yahoo.com';
         });
     </script>
     
     <footer>
-        <p>&copy; 2023 Seaweed Farming | Contact: junaid1230bloch@gmail.com</p>
+        <p>&copy; 2023 Vinex Seaweed Dealers | Contact: altafrazvi75@yahoo.com</p>
     </footer>
 
 </body>
